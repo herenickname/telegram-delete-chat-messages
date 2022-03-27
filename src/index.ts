@@ -29,12 +29,7 @@ async function main() {
             message: 'Choose chat',
             choices: availableToClearChats.map((x: any) => ({ value: x.id, title: x.title }))
         },
-        {
-            onCancel: () => {
-                console.log('Got bad answer... exiting.')
-                process.exit(-1)
-            }
-        }
+        { onCancel: onPromptsError }
     )
     const selectedChat = availableToClearChats.find((x) => x.id === promptChannelId.value) as any
 
