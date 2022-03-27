@@ -4,7 +4,7 @@
     "keywords": [
         "telegram"
     ],
-    "description": "Tool to clean all messages in telegram chat",
+    "description": "Tool to delete all messages in the telegram chat",
     "repository": {
         "type": "git",
         "url": "https://github.com/herenickname/telegram-delete-chat-messages"
